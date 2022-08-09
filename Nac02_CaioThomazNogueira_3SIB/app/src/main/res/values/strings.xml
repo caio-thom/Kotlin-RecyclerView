@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Nac02_CaioThomazNogueira_3SIB</string>
+    <string name="textquantity">TextQuantity</string>
+    <string name="textprice">TextPrice</string>
+    <string name="textname">TextName</string>
+</resources>

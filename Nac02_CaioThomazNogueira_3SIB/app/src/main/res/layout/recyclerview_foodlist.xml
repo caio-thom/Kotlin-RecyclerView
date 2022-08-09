@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/img_Food"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/textname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_food_shrimp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textname"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
+        app:layout_constraintStart_toStartOf="@+id/txtPrice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:text="@string/textprice"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_Food"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="82dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textquantity"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btn_But"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_But"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_But"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/textquantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtQuantity"
+        app:layout_constraintVertical_bias="0.659"
+        app:srcCompat="@drawable/ic_buy_true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
